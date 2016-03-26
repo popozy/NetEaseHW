@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- @Copyright 2015 Jiapeng Liu. All right reserved
+Date: 2015/12/1 -->
+<html>
+<head>
+	<meta charset = 'utf-8'/>
+	<link rel="stylesheet" type="text/css" href="init.css">
+	<link rel="stylesheet" type="text/css" href="project.css">
+
+	<title>网易教育产品部</title>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<!-- display the navigator of the page -->
+	<div id="head">
+		<div id="login">
+			<div class="mask"></div>
+			<div class="log">
+				<div class="logconta">
+					<label>登陆网易云课堂</label>
+					<input type="text" id="uid" placeholder = "账号">
+					<input type="password" id="passwd" placeholder = "密码";>
+					<input type="button" value="登 录" class="denglu">
+				</div>
+				<h1 id ="closelog">x</h1>
+			</div>
+		</div>
+		<div class="notice">
+			<p>网易云课堂微专业，帮助你掌握专业技能，令你的求职加薪多一份独特优势！</p>
+			<a href="">立即查看></a>
+			<div id="close"></div>
+		</div>
+		<div class="nav">	
+			<div class="logo">
+				<img src="pic/head/edu.png"/>
+				<div class="word">网易教育产品部</div>	
+			</div>
+			<div class="focus">
+				<button id="payatten">+ 关注</button>
+				<!-- need modify -->
+				<label class="fans">粉丝 45</label>
+			</div>
+			<div class="nav_right">
+				<a href="http://open.163.com/" class="open">网易公开课</a>
+				<a href="http://study.163.com/" class="study">云课堂</a>
+				<a href="http://www.icourse163.org/" class="icouse">中国大学MOOC</a>
+				<!-- need add resource -->
+				<div class="img"></div>
+				<!-- <img src="pic/head/zoom.png" class="search" style="hover:<img src='pic/head/zoomhover'>" /> -->
+			</div>
+		</div>
+
+		<!-- 3 pictures for looping -->
+		<div class="loop">
+			<div id="pic"></div>
+			<div id="circle">
+				<div class="circle circle-0"></div>
+				<div class="circle circle-1"></div>
+				<div class="circle circle-2"></div>
+			</div>
+			<!-- <div class="img"></div> -->
+		</div>
+
+		<!-- 3 products introduce of netease -->
+		<div class="product_sum">
+			<div class="open">
+				<img src="pic/body/product1.png" class="banner"/>
+				<div class="explain">
+					<div class="title">网易公开课</div>
+					<!-- 兼容性？？？？ -->
+					<p>推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
+					<a href="http://open.163.com/">了解更多></a>
+				</div>
+			</div>
+			<div class="study">
+				<img src="pic/body/product2.png" class="banner"/>
+				<div class="explain">
+					<div class="title">云课堂</div>
+					<p>网易旗下大型在线学习平台，该平台向学习者提供海量免费、优质课程，创新的个性化学习体验，自由开放的交流互动环境。</p>
+					<a href="http://study.163.com/">了解更多></a>
+				</div>
+			</div>
+			<div class="icourse">
+				<img src="pic/body/product3.png" class="banner"/>
+				<div class="explain">
+					<div class="title">中国大学MOOC</div>
+					<p>是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人，都可以在这里学习到中国最好的大学课程，学完还可以获得认证证书。</p>
+					<a href="http://www.icourse163.org/">了解更多></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- working environment of netease -->
+		<div class="enviro">
+			<!-- need pic. resources path -->
+			<!-- img src="pic\body\enviroment.jpg" class="pic"/> -->
+			<img src="pic/body/enviroment.jpg"/>
+		</div>
+		<!-- detail contents of products -->
+	</div>
+	<!-- display the educational products of the page -->
+	<div id="products">
+		<div class="left">
+			<!-- main contents -->
+			<div class="left_head nav">
+				<div class="clicked" id="produ_desi">产品设计</div>
+				<div class="unclicked" id="progra_lang">编程语言</div>
+			</div>
+			<!-- API -->
+			<div id="content"></div>
+			<!-- choose page to overview-->
+			<div class="page_choice">
+					<img src="pic/body/leftpage.png" class="move left_move"/>
+						<a>1</a>
+						<a>2</a>
+						<a>3</a>
+						<a>4</a>
+						<a>5</a>
+						<a>6</a>
+						<a>7</a>
+						<a>8</a>
+					<img src="pic/body/rightpage.png" class=" move right_move"/>
+			</div>
+		</div>
+		<div class="right">
+				<!-- video to introduce the NetEase -->
+				<div class="head">
+					<div class="top">机构介绍</div>
+					<div id="video_poster">
+						<p>观看下面的视频来了解吧：</p>
+						<!-- <video controls = "controls" src = "http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" poster = "pic/body/poster.png"></video> -->
+						<img src="pic/body/poster.png" class="poster">
+						<img src="pic/body/video_begin.png" id="video_trigger">
+					</div>
+					<div id="video_contai">
+					<div class="mask"></div>
+					<div class="video">
+						<p>请观看下面的视频</p>
+						<div id="close_video">x</div>
+						<video controls = "controls" src = "http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" poster = "pic/body/poster.png"></video>
+					</div>
+					</div>
+				</div>
+				<!-- rank of the courses -->
+				<div class="ranklist">
+					<div class="top">最热排行</div>
+					<div class="container">
+						<div id="rank"></div>
+					</div>
+					
+				</div>
+		</div>
+	</div>
+	
+	<!-- display content of the page foot -->
+	<div id="foot">
+		<div class="container">
+			<div class="left"> 
+				<img src="pic/foot/logo.png" class="netease_logo"/>
+				<p class="copyright">©2014 icourse163.org 浙ICP备08114786号-1</p>
+				<p class="copyright">icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
+			</div>
+			<div class="right">
+				<div class="col col-1">
+					<label class="link">友情链接</label>
+					<a href="http://open.163.com/" class="open" style="font-color: #828487">网易公开课</a>
+					<a href="http://study.163.com/" class="study">云课堂</a>
+					<a href="http://www.icourse163.org/" class="icouse">中国大学MOOC</a>
+				</div>
+				<div class="col col-2">
+					<label class="link">我们</label>
+					<a href="" class="about">关于</a>
+					<a href="" class="contact">联系</a>
+					<a href="" class="care">关注&nbsp;<img src="pic/foot/weibo.png"></a>
+					
+				</div>
+				<div class="col col-3">
+					<label class="more">更多</label>
+					<a href="" class="QA">常见问题</a>
+					<a href="" class="feedback">意见反馈</a>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src = "project.js"></script>
+</body>
+</html>

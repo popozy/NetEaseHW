@@ -1,0 +1,139 @@
+/* 
+@Copyright 2015 Jiapeng Liu. All right reserved
+Date: 2015/12/1
+*/
+
+	/*宽窄屏幕处理*/
+	@media screen and (max-width:1250px){
+		#products .left{width: 774px;}
+		#products {width:1000px;}
+   	}
+	@media screen and (min-width:1250px){
+   		#products .left{ width:970px;}
+   		#products {width: 1250px;}
+   	}
+	
+	/* 登陆栏样式 */
+	#login{position: relative; display: none;}
+	#login .mask{position: fixed; top:0; left:0; height: 100%; width: 100%; z-index: 998; background-color: #000; opacity: 0.75;}
+	#login #closelog{position:absolute; top:11px; right: 8px; background-color: #fff; font:bold 20px SimHei;}
+	#login #closelog:hover{cursor: pointer;}
+	#login .log{width: 390px ; height: 290px; z-index: 999; position: absolute; background-color: #fff; top:400px; transform:translateX(-50%); left: 50%;}
+	#login .logconta{font: bold 18px 'Microsoft YaHei'; margin: 33px 43px; /*background-color: grey*/; height: 220px; width: 300px; }
+	#login .logconta input{display: block; height: 45px; width: 300px; font: 16px 'Microsoft YaHei'; background-color: #fafafa; border-color: #dfdfdf; box-shadow: 2px 2px #f1f1f1 inset; text-indent: 10px;}
+	#login .log .notice_uid, .notice_passwd{position: absolute; top:90px; left: 53px; font:normal 18px SimSum; color:#cccccc;}
+	#login .logconta .denglu{background: -webkit-gradient(linear, 0 0, 0 100%, from(#31b657), to(#159631)); border:0; color: #fff; box-shadow: 2px 2px #d5e3da;  }
+	#login .logconta .denglu:hover{cursor: pointer;}
+	#login .logconta #uid{margin:20px auto 16px auto; }
+	#login .logconta #passwd{margin-bottom: 30px;}
+	
+	/* 小黄条 */
+	#head .notice{height: auto; width: 100%; font:12px SimHei; background-color: #f3f3f3;}
+	#head .notice>p{display: inline-block; margin-left: 205px; line-height:35px;}
+	#head #close{display: inline-block; float:right; margin:10px 205px auto auto; background-image: url("pic/head/close.png"); width: 63px; height: 12px;}
+	#head #close:hover{background-image: url("pic/head/close_hover.png");}
+	#head .notice a{text-decoration: none; color: #39a030; display: inline-block;}
+	#head .notice a:hover{text-decoration: underline;}
+	#head .nav{width: 1200px; margin:0 auto; font: 14px SimHei;}
+	#head .nav div{display: inline-block;line-height: 90px;}
+	#head .nav img{vertical-align: middle;}
+	#head .nav .focus{font:14px SimHei;}
+	#head .nav .word {font-size: 22px; margin-right: 30px; vertical-align: middle;}
+	
+	/* 顶部导航栏样式 */
+	#head {background-color: #ffffff; width: 100%;}
+	#head .nav button{background-color: #21a557; color: #fff; width:55px; height:22px; border-width:0px; border-radius: 2px; margin:auto 15px auto auto; display: inline; font:14px SimHei;}
+	#head .nav a{text-decoration: none; color: #666666; font:15px SimHei; margin: auto 0 auto 45px;display: inline-block;}
+	#head .nav a:hover{text-decoration: underline; color: #39a030;margin: auto 0 auto 45px;}
+	#head .nav .nav_right{float: right;}
+	#head .nav .nav_right .img{background-image: url('pic/head/zoom.png'); width: 20px; height: 20px;margin:auto 0 auto 30px; vertical-align: middle;}
+	#head .nav .nav_right .img:hover{background-image: url('Spic/head/zoom_hover.png'); width: 20px; height: 20px;margin:auto 0 auto 30px; vertical-align: middle;}
+	
+	/* 轮播图	*/
+	.loop {position: relative; margin: 0 auto; width: 100%; height: 460px;}
+    .loop #pic{position: absolute; left:50%; transform:translateX(-50%); background: url('pic/body/banner1.jpg') no-repeat; width:100%; height: 460px; }
+    .loop #circle{width:70px; height:10px; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); }
+    .loop .circle{display: inline-block; width: 10px; height: 10px; border-radius: 50%; background-color: #fff; margin:auto 5px;}
+    .loop .circle:hover{background-color: #000;}
+    .loop .circle-0{background-color: #000;}
+
+	/* 教育产品集合 */
+	#head .product_sum {display:flex;justify-content:center;}
+	#head .product_sum a{text-decoration: none; color: #39a030; font: 14px SimHei;}
+	#head .product_sum a:hover{text-decoration: underline;font:14px SimHei; }
+	#head .product_sum>div{ display: block; width: 340px; height:175px; margin:65px 42px; }
+	#head .product_sum .title{font: 20px SimHei; margin-bottom:15px;}
+	#head .product_sum p{font: 14px SimHei; line-height: 25px; margin-bottom: 30px;}
+	#head .product_sum .banner{float: left;}
+	
+	/* 工作环境大图 */
+	#head .enviro img{width: 100%;}
+
+	/* 产品展示区样式 */
+	#products {height: 1550px; display: table; margin: 90px auto auto auto;}
+	#products:after{display: block; clear: both; visibility: hidden; height: 0; overflow: hidden; content: '.';}
+	#products .right{float: left;  width: 223px;}
+	#products .left{float: left; }
+	#products .left .left_head div{display: inline-block; margin-bottom: 30px;}
+	#products .left .nav {font:22px SimHei;width:400px;text-align: center; display: table-cell; vertical-align: middle; line-height:50px; }
+	#produ_desi, #progra_lang{float:left; width:200px; height: 50px;background-color: #ffffff; display: inline-block;}
+	#products .left .clicked{background-color:#39a030; color: #fff;}
+	#products .left .unclicked{background-color: #fff; color: #000;}
+	#products .left .unclicked:hover, .clicked:hover{background-color: #39a030; color: #fff;}
+	
+	/* 产品展示区 数据交互模块样式 */
+	#content .unit{position:relative;float: left; relative;width:219px; height: 230px; margin:0 22px 20px 0; background-color: #ffffff;box-shadow: 0 1px 1px 1px #e6e6e6;}
+	#content .unit .contentPic{width:220px; height: 125px;}
+	#content .unit .name{width: 214px; height: 28px; font:12px/28px "Microsoft YaHei";  color: #5a5a5a; padding-left:5px; overflow: hidden; word-wrap:normal; white-space: nowrap; text-overflow: ellipsis;}
+	#content .unit .provider{font:13px/20px "Microsoft YaHei"; height: 20px; color: #999; padding-left: 5px;}
+	#content .unit .learnerCount{margin:5px;background: url("pic/body/sum.png") no-repeat; border:1px solid #ddd; border-radius:2px;padding-left: 15px; padding-right:2px;display:inline-block; color: #ddd; font: 10px "Microsoft YaHei";}
+	#content .unit .price {padding-left: 5px; font:bold 11px "Microsoft YaHei";  color:#ff3f00;}
+	#content .unit a{display: none;}
+	#content .unit:hover a{display:block; position:absolute; top:-10px; left:-10px; width:461px; min-height:218px; background:#fff; padding:10px; box-shadow:0 0 2px 1px #d3d1d2; z-index:999;}
+	#content .unit .contentPic-1{ float: left;	width:220px; height: 125px;}
+	#content .unit .name-1{padding-left: 230px; font:18px/26px "Microsoft YaHei"; }
+	#content .unit .learnerCount-1{ margin:10px auto 10px 230px; background: url("pic/body/sum.png") no-repeat; padding-left: 15px;  color: #666666; font: 13px "Microsoft YaHei";}
+	#content .unit .provider-1{font:13px "Microsoft YaHei"; color: #666666; padding-left: 230px; }
+	#content .unit .cateoryName{color:#666666; padding-left: 230px; margin-top: 5px;}
+	#content .unit .descri{float:left;font:15px/25px "Microsoft YaHei"; color:#666;}
+	#products .page_choice{float: right; margin:auto 22px 120px auto; font:12px SimSum;}
+	#products .page_choice a{display:inline-block; width: 20px; height: 20px; margin-left: 8px; text-align: center; line-height: 20px;}
+	#products .page_choice a:hover{background-color: #9dd8b1; color: #fff; }
+	#products .move{ vertical-align: middle;}
+	#products .move:hover{cursor: pointer;}
+	#products .right .head .top{font:18px/56px "Microsoft YaHei";  height: 56px; width:220px;text-indent: 1em;margin-bottom: 1px;box-shadow: 0 1px 1px 1px #e6e6e6;}
+	#products .right .head{margin-bottom: 20px;}
+	#products #video_poster{height: 173px; width:220px; box-shadow: 0 1px 1px 1px #e6e6e6;}
+	#products #video_poster p{font:15px/45px "Microsoft YaHei"; height: 45px; text-indent: 20px; padding-top: 10px;}
+	#products .poster{width: 180px; height: 110px; margin:0 auto; display:table;}
+	#products #video_trigger{position: relative; top: -75px; left: 85px;}
+	#products #video_trigger:hover{cursor: pointer;}
+	#products #video_contai{display: none;}
+	#video_contai .video{width: 950px; height: 676px; z-index: 999; position: absolute; background-color: #fff; top:1000px; left: 50%;transform:translateX(-50%);}
+	#video_contai .mask{position: fixed; top:0; left:0; height: 100%; width: 100%; z-index: 998; background-color: #000; opacity: 0.75;}
+	#video_contai p{font: bold 18px "Microsoft YaHei"; display: inline-block; margin:0 0 0 30px; line-height: 70px;}
+	#video_contai #close_video{font:bolder 30px SimHei; float: right; margin: 5px 13px auto auto;}
+	#video_contai #close_video:hover{cursor:pointer;}
+	#video_contai  video{width: 890px; height: 567px; margin:0 30px 60px 30px;}
+	#products .ranklist{ width: 220px;}
+	#products .ranklist .top{height: 55px;  box-shadow: 0 1px 1px 1px #e6e6e6; font:16px/55px "Microsoft YaHei"; text-indent: 20px;}
+	#products .ranklist .container{ position: relative; height: 720px;  box-shadow: 0 1px 1px 1px #e6e6e6; overflow: hidden;}
+	#products .ranklist #rank{position: absolute;}
+	#products #rank a{width: 185px; height: 50px; display: block; margin:20px;}
+	#products #rank div{height: 50px; width: 50px; overflow: hidden; float: left; margin-right: 12px;}
+	#products #rank p{width: 122px; height: 14px; font:14px/14px "Microsoft YaHei"; text-overflow:ellipsis; white-space: nowrap; overflow: hidden; margin-bottom: 13px;}
+	#products #rank span{font:12px/12px "Microsoft YaHei"; padding-left: 15px; background: url("pic/body/sum.png") no-repeat;}
+
+	/*页面底部样式*/
+	#foot{height: 260px; width:100%; background-color: #2c3339; color: #828487; line-height: 32px; position: relative; /*font-family: "Microsoft yahei";*/font-family: Microsoft YaHei}
+	#foot .container{width: 955px; height:102px;  position: absolute; top: 50%; left: 50%; transform:translate(-50%,-50%);}
+	#foot .left{font-size: 14px; float: left; display: inline-block;}
+	#foot .left .netease_logo{margin-top: 9px;}
+	#foot .right{font-size: 16px; float: right; }
+	#foot label{font-size: 14px;}
+	#foot .right a{color: #828487;text-decoration: none;}
+	#foot .right a:hover{text-decoration: underline;}
+	#foot .col{display: inline-block; }
+	#foot .col label,a{display: block;}
+	#foot .col-2{margin:auto 72px auto auto;}
+	#foot .col-1{margin:auto 100px auto auto;}
